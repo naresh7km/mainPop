@@ -10,17 +10,45 @@ app.use(bodyParser.json());
 // List of allowed frontend origins for CORS
 const allowedOrigins = [
   "https://www.greenshousejapanesefoodtruck.com",
-  "http://www.greenshousejapanesefoodtruck.com",
   "https://www.sakurasuhiandramenbar.com",
-  "http://www.sakurasuhiandramenbar.com",
+  "https://www.hisashieats.com",
+  "https://greenshousejapanesefoodtruck.com",
+  "https://sakurasuhiandramenbar.com",
+  "https://hisashieats.com",
+  "http://greenshousejapanesefoodtruck.com",
+  "http://sakurasuhiandramenbar.com",
+  "http://hisashieats.com",
+  "https://www.greenshousejapanesefoodtruck.com/",
+  "https://www.sakurasuhiandramenbar.com/",
+  "https://www.hisashieats.com/",
+  "https://greenshousejapanesefoodtruck.com/",
+  "https://sakurasuhiandramenbar.com/",
+  "https://hisashieats.com/",
+  "http://greenshousejapanesefoodtruck.com/",
+  "http://sakurasuhiandramenbar.com/",
+  "http://hisashieats.com/",
 ];
 
 // List of allowed referrers
 const allowedReferrers = [
   "https://www.greenshousejapanesefoodtruck.com",
-  "http://www.greenshousejapanesefoodtruck.com",
   "https://www.sakurasuhiandramenbar.com",
-  "http://www.sakurasuhiandramenbar.com",
+  "https://www.hisashieats.com",
+  "https://greenshousejapanesefoodtruck.com",
+  "https://sakurasuhiandramenbar.com",
+  "https://hisashieats.com",
+  "http://greenshousejapanesefoodtruck.com",
+  "http://sakurasuhiandramenbar.com",
+  "http://hisashieats.com",
+  "https://www.greenshousejapanesefoodtruck.com/",
+  "https://www.sakurasuhiandramenbar.com/",
+  "https://www.hisashieats.com/",
+  "https://greenshousejapanesefoodtruck.com/",
+  "https://sakurasuhiandramenbar.com/",
+  "https://hisashieats.com/",
+  "http://greenshousejapanesefoodtruck.com/",
+  "http://sakurasuhiandramenbar.com/",
+  "http://hisashieats.com/",
 ];
 
 // CORS configuration
