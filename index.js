@@ -27,6 +27,10 @@ const allowedOrigins = [
   "http://greenshousejapanesefoodtruck.com/",
   "http://sakurasuhiandramenbar.com/",
   "http://hisashieats.com/",
+  "https://massagesayami.com",
+  "http://massagesayami.com",
+  "https://massagesayami.com/",
+  "http://massagesayami.com/",
 ];
 
 // List of allowed referrers
@@ -49,6 +53,10 @@ const allowedReferrers = [
   "http://greenshousejapanesefoodtruck.com/",
   "http://sakurasuhiandramenbar.com/",
   "http://hisashieats.com/",
+  "https://massagesayami.com",
+  "http://massagesayami.com",
+  "https://massagesayami.com/",
+  "http://massagesayami.com/",
 ];
 
 // CORS configuration
