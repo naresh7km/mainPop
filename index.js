@@ -35,6 +35,10 @@ const allowedOrigins = [
   "http://shibuyahotel.life",
   "https://shibuyahotel.life/",
   "http://shibuyahotel.life/",
+  "https://yuuyuuyoga.fit",
+  "http://yuuyuuyoga.fit",
+  "https://yuuyuuyoga.fit/",
+  "http://yuuyuuyoga.fit/",
 ];
 
 // List of allowed referrers
@@ -65,6 +69,10 @@ const allowedReferrers = [
   "http://shibuyahotel.life",
   "https://shibuyahotel.life/",
   "http://shibuyahotel.life/",
+  "https://yuuyuuyoga.fit",
+  "http://yuuyuuyoga.fit",
+  "https://yuuyuuyoga.fit/",
+  "http://yuuyuuyoga.fit/",
 ];
 
 // CORS configuration
