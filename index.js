@@ -1,84 +1,46 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const app = express();
-const PORT = 3000 || process.env.PORT;
-
 const bodyParser = require("body-parser");
-app.use(bodyParser.json());
 
-// List of allowed frontend origins for CORS
-const allowedOrigins = [
-  "https://www.greenshousejapanesefoodtruck.com",
-  "https://www.sakurasuhiandramenbar.com",
-  "https://www.hisashieats.com",
-  "https://greenshousejapanesefoodtruck.com",
-  "https://sakurasuhiandramenbar.com",
-  "https://hisashieats.com",
-  "http://greenshousejapanesefoodtruck.com",
-  "http://sakurasuhiandramenbar.com",
-  "http://hisashieats.com",
-  "https://www.greenshousejapanesefoodtruck.com/",
-  "https://www.sakurasuhiandramenbar.com/",
-  "https://www.hisashieats.com/",
-  "https://greenshousejapanesefoodtruck.com/",
-  "https://sakurasuhiandramenbar.com/",
-  "https://hisashieats.com/",
-  "http://greenshousejapanesefoodtruck.com/",
-  "http://sakurasuhiandramenbar.com/",
-  "http://hisashieats.com/",
-  "https://massagesayami.com",
-  "http://massagesayami.com",
-  "https://massagesayami.com/",
-  "http://massagesayami.com/",
-  "https://shibuyahotel.life",
-  "http://shibuyahotel.life",
-  "https://shibuyahotel.life/",
-  "http://shibuyahotel.life/",
-  "https://yuuyuuyoga.fit",
-  "http://yuuyuuyoga.fit",
-  "https://yuuyuuyoga.fit/",
-  "http://yuuyuuyoga.fit/",
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+const firstList = ["greenshousejapanesefoodtruck", "sakurasuhiandramenbar", "hisashieats"];
+const secondList = ["massagesayami", "shibuyahotel", "yuuyuuyoga"];
+const thirdList = [];
+
+const baseDomains = [
+  "greenshousejapanesefoodtruck.com",
+  "sakurasuhiandramenbar.com",
+  "hisashieats.com",
+  "massagesayami.com",
+  "shibuyahotel.life",
+  "yuuyuuyoga.fit"
 ];
 
-// List of allowed referrers
-const allowedReferrers = [
-  "https://www.greenshousejapanesefoodtruck.com",
-  "https://www.sakurasuhiandramenbar.com",
-  "https://www.hisashieats.com",
-  "https://greenshousejapanesefoodtruck.com",
-  "https://sakurasuhiandramenbar.com",
-  "https://hisashieats.com",
-  "http://greenshousejapanesefoodtruck.com",
-  "http://sakurasuhiandramenbar.com",
-  "http://hisashieats.com",
-  "https://www.greenshousejapanesefoodtruck.com/",
-  "https://www.sakurasuhiandramenbar.com/",
-  "https://www.hisashieats.com/",
-  "https://greenshousejapanesefoodtruck.com/",
-  "https://sakurasuhiandramenbar.com/",
-  "https://hisashieats.com/",
-  "http://greenshousejapanesefoodtruck.com/",
-  "http://sakurasuhiandramenbar.com/",
-  "http://hisashieats.com/",
-  "https://massagesayami.com",
-  "http://massagesayami.com",
-  "https://massagesayami.com/",
-  "http://massagesayami.com/",
-  "https://shibuyahotel.life",
-  "http://shibuyahotel.life",
-  "https://shibuyahotel.life/",
-  "http://shibuyahotel.life/",
-  "https://yuuyuuyoga.fit",
-  "http://yuuyuuyoga.fit",
-  "https://yuuyuuyoga.fit/",
-  "http://yuuyuuyoga.fit/",
-];
+const generateAllowedUrls = (domains) => {
+  const protocols = ["https://", "http://"];
+  const www = ["", "www."];
+  const trailingSlash = ["", "/"];
+  const urls = [];
+  domains.forEach(domain => {
+    protocols.forEach(protocol => {
+      www.forEach(prefix => {
+        trailingSlash.forEach(suffix => {
+          urls.push(`${protocol}${prefix}${domain}${suffix}`);
+        });
+      });
+    });
+  });
+  return urls;
+};
 
-// CORS configuration
+const allowedUrls = generateAllowedUrls(baseDomains);
+
 const corsOptions = {
   origin: function (origin, callback) {
-    if (allowedOrigins.includes(origin) || !origin) {
+    if (allowedUrls.includes(origin) || !origin) {
       callback(null, true);
     } else {
       callback(new Error("Not allowed by CORS"));
@@ -86,43 +48,31 @@ const corsOptions = {
   },
 };
 
-// Apply the CORS middleware
 app.use(cors(corsOptions));
+app.use(bodyParser.json());
 
-// Check against the allowedReferrers
-app.get(
-  "/",
-  (req, res, next) => {
-    const referer = req.headers.referer;
-
-    // Check if the referer exists in the allowedReferrers array
-    if (
-      referer &&
-      allowedReferrers.some((domain) => referer.startsWith(domain))
-    ) {
-      next();
-    } else {
-      res.status(403).send("Access forbidden");
-    }
-  },
-  (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
-    // res.send(`<iframe width="100%" height="100%" margin-top:"30%" src="https://www.youtube.com/embed/463tZXEDhig?si=okMgnV6S1RF1XDhN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
+const checkReferrer = (req, res, next) => {
+  const referer = req.headers.referer;
+  if (referer && allowedUrls.some((url) => referer.startsWith(url))) {
+    next();
+  } else {
+    res.status(403).send("Access forbidden");
   }
-);
+};
 
-// app.use(cors());
+const handleRequest = (req, res) => {
+  const fullUrl = req.headers.referer || req.headers.referrer;
+  if (firstList.some(item => fullUrl.includes(item))) {
+    res.sendFile(path.join(__dirname, "index.html"));
+  } else if (secondList.some(item => fullUrl.includes(item))) {
+    res.sendFile(path.join(__dirname, "secondNumber.html"));
+  } else {
+    res.sendFile(path.join(__dirname, "thirdNumber.html"));
+  }
+};
 
-// app.post("/submit-phone", (req, res) => {
-//   // Log the phone number on the server side
-//   console.log("Received phone number:", req.body);
-
-//   res.header("Access-Control-Allow-Origin", "*"); // Allow CORS from any origin
-
-//   // Send a response back to the client
-//   res.json({ message: "Phone number submitted successfully" });
-// });
+app.get("/", checkReferrer, handleRequest);
 
 app.listen(PORT, () => {
-  console.log(`Server is running`);
+  console.log(`Server is running on port ${PORT}`);
 });
