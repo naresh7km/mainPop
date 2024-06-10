@@ -31,6 +31,10 @@ const allowedOrigins = [
   "http://massagesayami.com",
   "https://massagesayami.com/",
   "http://massagesayami.com/",
+  "https://shibuyahotel.life",
+  "http://shibuyahotel.life",
+  "https://shibuyahotel.life/",
+  "http://shibuyahotel.life/",
 ];
 
 // List of allowed referrers
@@ -57,6 +61,10 @@ const allowedReferrers = [
   "http://massagesayami.com",
   "https://massagesayami.com/",
   "http://massagesayami.com/",
+  "https://shibuyahotel.life",
+  "http://shibuyahotel.life",
+  "https://shibuyahotel.life/",
+  "http://shibuyahotel.life/",
 ];
 
 // CORS configuration
