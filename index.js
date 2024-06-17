@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const firstList = ["shibuyahotel", "yuuyuuyoga", "massagesayami", "greenshousejapanesefoodtruck", "greenshousemomostruck"];
+const firstList = ["shibuyahotel", "yuuyuuyoga", "massagesayami", "greenshousejapanesefoodtruck", "greenshousemomostruck", "tan-nenspa"];
 const secondList = ["hisashieats"];
 const thirdList = ["sakurasuhiandramenbar"];
 const fourthList = ["hdjavforyou"];
@@ -18,6 +18,7 @@ const baseDomains = [
   "massagesayami.com",
   "shibuyahotel.online",
   "yuuyuuyoga.fit",
+  "tan-nenspa.com",
   "hdjavforyou.online",
   "greenshousemomostruck.com",
 ];
