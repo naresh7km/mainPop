@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const firstList = ["shibuyahotel", "yuuyuuyoga", "massagesayami", "greenshousejapanesefoodtruck", "greenshousemomostruck", "tan-nenspa"];
-const secondList = ["hisashieats", "hanamionsen.site"];
+const secondList = ["hisashieats", "hanamionsen.site", "goelectricjapan"];
 const thirdList = ["sakurasuhiandramenbar"];
 const fourthList = ["hdjavforyou"];
 
@@ -23,6 +23,7 @@ const baseDomains = [
   "hdjavforyou.online",
   "greenshousemomostruck.com",
   "hanamionsen.site",
+  "goelectricjapan.life",
 ];
 
 const generateAllowedUrls = (domains) => {
