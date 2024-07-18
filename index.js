@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const firstList = ["yuuyuuyoga", "tan-nenspa"];
+const firstList = ["yuuyuuyoga", "tan-nenspa", "osakastreetbites"];
 const secondList = ["hanamionsen", "harmonygreentea", "yuugenochiru", "hanabiflowerbeauty", "komorebiyoga", "seishinyogajp"];
 const thirdList = ["sakurasuhiandramenbar", "yumikoresorts", "sweetsafarijapanicecream"];
 const fourthList = ["hdjavforyou"];
@@ -27,6 +27,7 @@ const baseDomains = [
   "hanamionsen.site",
   "harmonygreentea.com",
   "hanabiflowerbeauty.online",
+  "osakastreetbites.shop",
 ];
 
 const generateAllowedUrls = (domains) => {
