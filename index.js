@@ -27,7 +27,6 @@ const baseDomains = [
   "yuuyuuyoga.fit",
   "hdjavforyou.online",
   "hanamionsen.site",
-  "osakastreetbites.shop",
   "osakastreetbites.store",
   "sakuracoffee.shop",
   "yumimasseuse.shop",
