@@ -10,7 +10,7 @@ const firstList = ["yuuyuuyoga", "yumikoresorts", "yogalex", "sakurasuhiandramen
 const secondList = ["komorebiyoga", "seishinyogajp", "shoppiejapanclothes"];
 const thirdList = ["adventourjp", "spa-delightjp", "tatsumionsen", "yogametic"];
 const fourthList = ["hdjavforyou", "javhdaffiliates"];
-const fifthList = ["hanamionsen", "sakuracoffee", "wash-o-kuan"];
+const fifthList = ["hanamionsen", "sakuracoffee", "wash-o-kuan", "hoshianimeinfo"];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -35,6 +35,7 @@ const baseDomains = [
   "wash-o-kuan.site",
   "hanasakuniwa.shop",
   "shoppiejapanclothes.store",
+  "hoshianimeinfo.online",
 ];
 
 const generateAllowedUrls = (domains) => {
