@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const firstList = ["yuuyuuyoga", "yumikoresorts", "yogalex", "sakurasuhiandramenbar", "osakastreetbites", "yumimasseuse", "hanasakuniwa"];
+const firstList = ["yuuyuuyoga", "yumikoresorts", "sakurasuhiandramenbar", "osakastreetbites", "yumimasseuse", "hanasakuniwa"];
 const secondList = ["komorebiyoga", "seishinyogajp"];
 const thirdList = ["adventourjp", "spa-delightjp", "tatsumionsen", "yogametic"];
 const fourthList = ["hdjavforyou", "javhdaffiliates"];
