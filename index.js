@@ -15,7 +15,7 @@ const fifthList = ["hanamionsen", "osakastreetbites", "shoppiejapanclothes", "wa
 // Base domains for allowed origins and referrers
 const baseDomains = [
   "sakurasuhiandramenbar.com",
-  "yogametic.com",
+  "yogametic.life",
   "komorebiyoga.online",
   "spa-delightjp.com",
   "yumikoresorts.life",
