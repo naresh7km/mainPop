@@ -10,7 +10,7 @@ const firstList = ["yuuyuuyoga", "yumikoresorts", "sakurasuhiandramenbar", "hana
 const secondList = ["yogametic", "komorebiyoga", "spa-delightjp"];
 const thirdList = ["seishinyogajp", "tatsumionsen"];
 const fourthList = ["hdjavforyou", "javhdaffiliates"];
-const fifthList = ["hanamionsen", "wash-o-kuan", "hoshianimeinfo", "yogalex", "fitzonefitness", "shinkansen", "sakuracoffee", "hikokimagic", "yumimasseuse", "osakastreetbites",  "shoppiejapanclothes"];
+const fifthList = ["hanamionsen", "wash-o-kuan", "yogalex", "fitzonefitness", "shinkansen", "sakuracoffee", "hikokimagic", "yumimasseuse", "osakastreetbites",  "shoppiejapanclothes"];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -35,7 +35,6 @@ const baseDomains = [
   "wash-o-kuan.site",
   "hanasakuniwa.shop",
   "shoppiejapanclothes.store",
-  "hoshianimeinfo.online",
   "fitzonefitness.shop",
   "shinkansen.info",
   "hikokimagic.shop",
