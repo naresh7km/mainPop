@@ -17,7 +17,7 @@ const baseDomains = [
   "sakurasuhiandramenbar.com",
   "yogametic.fit",
   "komorebiyoga.online",
-  "spa-delightjp.online",
+  "spa-delightjp.com",
   "yumikoresorts.life",
   "tatsumionsen.site",
   "javhdaffiliates.site",
