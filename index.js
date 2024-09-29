@@ -26,11 +26,11 @@ const baseDomains = [
   "sakuracoffee.shop",
   "yumimasseuse.shop",
   "hanasakuniwa.shop",
-  "shoppiejapaneseclothes.life",
+  "shoppiejapaneseclothes.fashion",
   "fitzonefitness.live",
   "shinkansenfacts.online",
-  "hikokifacts.online",
-  "mahbubanioldage.homes",
+  "hikokifacts.live",
+  "mahbubanioldage.life",
 ];
 
 const generateAllowedUrls = (domains) => {
