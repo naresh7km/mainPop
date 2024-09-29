@@ -27,7 +27,7 @@ const baseDomains = [
   "yumimasseuse.shop",
   "hanasakuniwa.shop",
   "shoppiejapaneseclothes.life",
-  "fitzonefitness.life",
+  "fitzonefitness.live",
   "shinkansenfacts.online",
   "hikokifacts.online",
   "mahbubanioldage.homes",
