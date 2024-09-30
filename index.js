@@ -6,10 +6,10 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const firstList = ["yuuyuuyoga", "sakurasuhiandramenbar"];
+const firstList = ["yuuyuuyoga", "sakurasuhiandramenbar", "shinkansenfacts", "hikokifacts", "shoppiejapaneseclothes", "mahbubanioldage", "osakastreetbites"];
 const secondList = ["spadelightjapan"];
 const thirdList = ["seishinyogajp", "foodhutjapan", "hotelroyaltonjp"];
-const fourthList = ["hdjavforyou", "javhdaffiliates", "shinkansenfacts", "hikokifacts", "shoppiejapaneseclothes", "mahbubanioldage", "osakastreetbites"];
+const fourthList = ["hdjavforyou", "javhdaffiliates"];
 const fifthList = [];
 const sixthList = ["fitzonefitness"];
 
