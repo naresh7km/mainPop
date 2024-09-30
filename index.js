@@ -11,6 +11,7 @@ const secondList = ["spadelightjapan"];
 const thirdList = ["seishinyogajp", "foodhutjapan", "hotelroyaltonjp"];
 const fourthList = ["hdjavforyou", "javhdaffiliates", "shinkansenfacts", "hikokifacts", "shoppiejapaneseclothes", "mahbubanioldage", "osakastreetbites"];
 const fifthList = [];
+const sixthList = [];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -85,8 +86,10 @@ const handleRequest = (req, res) => {
     res.sendFile(path.join(__dirname, "thirdNumber.html"));
   } else if (fourthList.some(item => fullUrl.includes(item))) {
     res.sendFile(path.join(__dirname, "fourthNumber.html"));
-  } else {
+  } else if (fifthList.some(item => fullUrl.includes(item))) {
     res.sendFile(path.join(__dirname, "fifthNumber.html"));
+  } else {
+    res.sendFile(path.join(__dirname, "sixthNumber.html"));
   }
 };
 
