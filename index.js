@@ -18,7 +18,7 @@ const baseDomains = [
   "sakurasuhiandramenbar.com",
   "foodhutjapan.com",
   "hotelroyaltonjp.com",
-  "spadelightjapan.com",
+  "spadelightjapan.fit",
   "javhdaffiliates.site",
   "seishinyogajp.fit",
   "massagesayami.com",
