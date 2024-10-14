@@ -11,7 +11,7 @@ const secondList = ["spadelightjapan", "hdjavforyou", "javhdaffiliates"];
 const thirdList = ["seishinyogajp", "foodhutjapan", "hotelroyaltonjp", "yuyado-onsen"];
 const fourthList = ["shoppiejapanclothes", "shinkansenfacts", "osakastreetbites", "hikokilove"];
 const fifthList = [];
-const sixthList = ["fitzonefitness", "wanoiyashi", "nogamilearnings", "fitclubcommunity", "expressmealdelivery"];
+const sixthList = ["fitzonefitness", "wanoiyashi", "nogamilearnings", "fitclubcommunity", "expressmealdelivery", "hanasakuniwa"];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -37,6 +37,7 @@ const baseDomains = [
   "nogamilearnings.shop",
   "fitclubcommunity.shop",
   "expressmealdelivery.shop",
+  "hanasakuniwa.shop",
 ];
 
 const generateAllowedUrls = (domains) => {
