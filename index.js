@@ -36,7 +36,7 @@ const baseDomains = [
   "hanasakuniwa.shop",
   "omnifoods.shop",
   "gourmethubeats.shop",
-  "ryuzakifitness.shop",
+  "ryuzakifitnesss.shop",
 ];
 
 const generateAllowedUrls = (domains) => {
