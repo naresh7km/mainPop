@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const firstList = ["yuuyuuyoga", "sakurasuhiandramenbar"];
-const secondList = ["hdjavforyou", "javhdaffiliates", "wanoiyashi", "nogamilearnings", "fitclubcommunity", "expressmealdelivery", "hanasakuniwa", "omnifoods", "gourmethubeats"];
+const secondList = ["hdjavforyou", "javhdaffiliates", "wanoiyashi", "nogamilearnings", "fitclubcommunity", "expressmealdelivery", "hanasakuniwa", "omnifoods", "gourmethubeats", "momomania"];
 const thirdList = ["seishinyoga", "yuyado-onsen", "spadelightjapan", "hotelroyaltonjp"];
 const fourthList = [];
 const fifthList = [];
@@ -37,6 +37,7 @@ const baseDomains = [
   "omnifoods.shop",
   "gourmethubeats.shop",
   "ryuzakifitnesss.shop",
+  "momomania.shop",
 ];
 
 const generateAllowedUrls = (domains) => {
