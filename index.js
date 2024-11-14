@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 const firstList = ["yuuyuuyoga", "sakurasuhiandramenbar"];
 const secondList = ["hdjavforyou", "javhdaffiliates"];
-const thirdList = ["seishinyoga", "yuyado-onsen", "spadelightjapan", "hotelroyaltonjp"];
+const thirdList = ["seishinyoga", "yuyado-onsen", "spadelightjapan", "hotelroyaltonjp", "foodhutjapan"];
 const fourthList = ["omnifoodss", "hanasakuniwa"];
 const fifthList = ["ruijiacoaching", "calmyogaandmeditation"];
 const sixthList = ["fitzonefitness", "ryuzakifitness", "nogamilearnings", "fitclubcommunity", "expressmealdelivery", "momomania", "gourmethubeats"];
@@ -16,6 +16,7 @@ const sixthList = ["fitzonefitness", "ryuzakifitness", "nogamilearnings", "fitcl
 // Base domains for allowed origins and referrers
 const baseDomains = [
   "sakurasuhiandramenbar.com",
+  "foodhutjapan.netlify.app",
   "foodhutjapan.com",
   "yuyado-onsen.com",
   "hotelroyaltonjp.com",
