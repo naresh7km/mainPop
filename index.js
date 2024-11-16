@@ -15,7 +15,6 @@ const sixthList = ["fitzonefitness", "ryuzakifitness", "hanasakuniwa", "expressm
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
-  "sakurasuhiandramenbar.com",
   "foodhutjapan.netlify.app",
   "foodhutjapan.com",
   "yuyado-onsen.com",
@@ -23,7 +22,6 @@ const baseDomains = [
   "spadelightjapan.fit",
   "javhdaffiliates.site",
   "seishinyoga.com",
-  "yuuyuuyoga.fit",
   "hdjavforyou.online",
   "yumimasseuse.shop",
   "hanasakuniwa.shop",
