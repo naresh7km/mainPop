@@ -10,7 +10,7 @@ const firstList = [];
 const secondList = ["hdjavforyou", "javhdaffiliates"];
 const thirdList = ["seishinyoga", "yuyado-onsen", "spadelightjapan", "foodhutjapan", "hotelroyaltonjp"];
 const fourthList = [];
-const fifthList = ["ruijiacoaching", "calmyogaandmeditation", "expresseatsbychefarash"];
+const fifthList = ["ruijiacoaching", "calmyogaandmeditation"];
 const sixthList = ["fitzonefitness", "nursecares", "omnifoodss", "expressmealdelivery", "yogalhealing", "nogamilearnings", "fitclubcommunity", "momomania", "gourmethubeats", "instanttnews"];
 
 // Base domains for allowed origins and referrers
@@ -36,7 +36,6 @@ const baseDomains = [
   "instanttnews.shop",
   "ruijiacoaching.us",
   "calmyogaandmeditation.online",
-  "expresseatsbychefarash.club",
 ];
 
 const generateAllowedUrls = (domains) => {
