@@ -11,7 +11,7 @@ const secondList = ["hdjavforyou", "javhdaffiliates", "spadelightjapan"];
 const thirdList = ["seishinyoga", "yuyado-onsen", "spadelightjapan", "foodhutjapan", "hotelroyaltonjp"];
 const fourthList = ["tanenespa"];
 const fifthList = ["ruijiacoaching", "calmyogaandmeditation"];
-const sixthList = ["nursecares", "omnifoodss", "expressmealdelivery", "yogalhealing", "gourmethubeats", "instanttnews"];
+const sixthList = ["nursecares", "omnifoodss", "expressmealdelivery", "yogalhealing", "gourmethubeats"];
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -25,16 +25,12 @@ const baseDomains = [
   "seishinyoga.com",
   "hdjavforyou.online",
   "yumimasseuse.shop",
-  "hanasakuniwa.shop",
-  "nogamilearnings.shop",
-  "fitclubcommunity.shop",
   "expressmealdelivery.shop",
   "hanasakuniwa.shop",
   "omnifoodss.shop",
   "gourmethubeats.shop",
   "yogahealing.netlify.app",
   "nursecares.netlify.app",
-  "instanttnews.shop",
   "ruijiacoaching.us",
   "calmyogaandmeditation.online",
 ];
