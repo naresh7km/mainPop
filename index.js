@@ -10,7 +10,7 @@ const firstList = ["spadelightjapan"];
 const secondList = ["hdjavforyou", "javhdaffiliates"];
 const thirdList = ["seishinyoga", "yuyado-onsen", "foodhutjapan"];
 const fourthList = ["tanenespa"];
-const fifthList = ["ruijiacoaching", "calmyogaandmeditation"];
+const fifthList = ["ruijiacoaching", "calmyogaandmeditation", "gardenretreatspa", "onceinliferestaurant", "oceanrestaurant", "kokoroyoga", "dreamdining"];
 const sixthList = ["nursecares", "expressmealdelivery", "yogalhealing", "gourmethub", "omnifoodss"];
 
 // Base domains for allowed origins and referrers
@@ -32,6 +32,11 @@ const baseDomains = [
   "ruijiacoaching.us",
   "gourmethub.netlify.app",
   "calmyogaandmeditation.online",
+  "gardenretreatspa.club",
+  "onceinliferestaurant.food",
+  "oceanrestaurant.food",
+  "kokoroyoga.club",
+  "dreamdining.club",
 ];
 
 const generateAllowedUrls = (domains) => {
