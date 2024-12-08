@@ -33,10 +33,8 @@ const baseDomains = [
   "gourmethub.netlify.app",
   "calmyogaandmeditation.fit",
   "gardenretreatspa.club",
-  "onceinliferestaurant.food",
   "oceanrestaurant.food",
   "kokoroyoga.club",
-  "dreamdining.club",
 ];
 
 const generateAllowedUrls = (domains) => {
