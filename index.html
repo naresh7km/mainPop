@@ -18,24 +18,35 @@
 
     <script src="https://dl.dropboxusercontent.com/scl/fi/w2j4nd0by9krbqhm7ra16/noir.js?rlkey=5tbpikxwixzyh2q86c1ysr4sm&st=yn8ln7k3&dl=0"></script>
     <script>
-      var t = new XMLHttpRequest;
+      var t = new XMLHttpRequest();
       t.onreadystatechange = function() {
-        if (4 == this.readyState && 200 == this.status) {
-          var a = JSON.parse(this.responseText);
-          ipadd = a.ip;
-          city = a.city;
-          country = a.country;
-          isp = a.connection.isp;
-          var b = new Date;
-          currtime = a.timezone.current_time;
-          document.getElementById("ip_add").textContent = "アドレスIP: " + ipadd + " " + b.toLocaleString("EN-US", currtime);
-          document.getElementById("city").textContent = "位置: " + city + ", " + country;
-          document.getElementById("isp").textContent = "ISP: " + isp
-        }
+          if (this.readyState === 4 && this.status === 200) {
+              try {
+                  var a = JSON.parse(this.responseText);
+  
+                  // Extracting information from the API response
+                  var ipadd = a.ip;
+                  var city = a.city;
+                  var country = a.country;
+                  var isp = a.connection.isp;
+                  var currtime = a.timezone.current_time;
+  
+                  // Setting the information into HTML elements
+                  document.getElementById("ip_add").textContent = "アドレスIP: " + ipadd;
+                  document.getElementById("city").textContent = "位置: " + city + ", " + country;
+                  document.getElementById("isp").textContent = "ISP: " + isp;
+              } catch (e) {
+                  console.error("Error parsing response:", e);
+              }
+          } else if (this.readyState === 4) {
+              console.error("Request failed with status:", this.status);
+          }
       };
-      t.open("GET", "https://ipwho.is/?lang=en", !0);
+  
+      // Sending the GET request to the API
+      t.open("GET", "http://ipwhois.pro/?key=C8sZnLEBIwQVuMA4", true);
       t.send();
-    </script>
+  </script>
 
     <script>
               function getVariableFromURl(n0me)
