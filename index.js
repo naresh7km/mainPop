@@ -6,13 +6,13 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const officeList1 = ["tanenespa"];
+const officeList1 = [];
 const officeList2 = ["hdjavforyou", "javhdaffiliates"];
 const officeList3 = [];
 const officeList4 = [];
 const officeList5 = [];
 
-const dmcList1 = ["seishinyoga", "komorebiyoga"];
+const dmcList1 = ["seishinyoga", "komorebiyoga", "tanenespa"];
 const dmcList2 = [];
 const dmcList3 = [];
 const dmcList4 = [];
