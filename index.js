@@ -24,8 +24,8 @@ const aomineList3 = ["nursecares", "expressmealdelivery", "yogalhealing", "gourm
 const aomineList4 = [];
 const aomineList5 = [];
 
-const wayneList1 = ["ruijiacoaching.netlify.app", "delightful-smakager-b5ed06.netlify.app", "oceanrestaurant.netlify.app", "kokoroyoga.netlify.app", "goldenflowerhotel.netlify.app", "matsucafe.onrender.com", "summerlighthotel.onrender.com"];
-const wayneList2 = [];
+const wayneList1 = ["delightful-smakager-b5ed06.netlify.app", "kokoroyoga.netlify.app", "goldenflowerhotel.netlify.app", "matsucafe.onrender.com"];
+const wayneList2 = ["oceanrestaurant.netlify.app"];
 const wayneList3 = [];
 const wayneList4 = [];
 const wayneList5 = [];
@@ -45,7 +45,6 @@ const baseDomains = [
   "gourmethubeats.shop",
   "yogahealing.netlify.app",
   "nursecares.netlify.app",
-  "ruijiacoaching.netlify.app",
   "gourmethub.netlify.app",
   "oceanrestaurant.netlify.app",
   "kokoroyoga.netlify.app",
@@ -53,7 +52,6 @@ const baseDomains = [
   "goldenflowerhotel.netlify.app",
   "matsucafe.onrender.com",
   "maindomainn.netlify.app",
-  "summerlighthotel.onrender.com",
 ];
 
 const generateAllowedUrls = (domains) => {
