@@ -24,12 +24,11 @@ const aomineList3 = ["expressmealdelivery", "yogalhealing", "gourmethub", "maind
 const aomineList4 = [];
 const aomineList5 = [];
 
-const wayneList1 = ["oceanrestaurant.netlify.app", "delightful-smakager-b5ed06.netlify.app", "glistening-llama-84890a.netlify.app", "resilient-belekoy-6ea47d.netlify.app", "matsucafe.onrender.com"];
+const wayneList1 = ["oceanrestaurant.netlify.app", "delightful-smakager-b5ed06.netlify.app", "kokoroyogaonline.netlify.app", "resilient-belekoy-6ea47d.netlify.app", "matsucafe.onrender.com"];
 const wayneList2 = [];
 const wayneList3 = [];
 const wayneList4 = [];
 const wayneList5 = [];
-
 
 // Base domains for allowed origins and referrers
 const baseDomains = [
@@ -48,7 +47,7 @@ const baseDomains = [
   "nursecares.netlify.app",
   "gourmethub.netlify.app",
   "oceanrestaurant.netlify.app",
-  "glistening-llama-84890a.netlify.app",
+  "kokoroyogaonline.netlify.app",
   "delightful-smakager-b5ed06.netlify.app",
   "resilient-belekoy-6ea47d.netlify.app",
   "matsucafe.onrender.com",
