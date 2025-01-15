@@ -47,7 +47,6 @@ const baseDomains = [
   "newomnifoodss.shop",
   "gourmethubeats.shop",
   "yogahealing.netlify.app",
-  "nursecares.netlify.app",
   "gourmethub.netlify.app",
   "oceanrestaurant.netlify.app",
   "imaginative-flan-4a888f.netlify.app",
