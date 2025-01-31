@@ -30,6 +30,7 @@ const wayneList3 = ["oceanrestaurant.netlify.app", "delightful-smakager-b5ed06.n
 const wayneList4 = [];
 const wayneList5 = [];
 
+
 // Base domains for allowed origins and referrers
 const baseDomains = [
   "tanenespa.onrender.com",
