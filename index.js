@@ -13,7 +13,7 @@ const officeList4 = [];
 const officeList5 = [];
 
 const dmcList1 = ["seishinyoga"];
-const dmcList2 = ["komorebiyoga.onrender.com"];
+const dmcList2 = ["yogakomorebi.onrender.com"];
 const dmcList3 = [];
 const dmcList4 = [];
 const dmcList5 = [];
@@ -38,7 +38,7 @@ const wayneList5 = [];
 // Base domains for allowed origins and referrers
 const baseDomains = [
   "tanenespa.onrender.com",
-  "komorebiyoga.onrender.com",
+  "yogakomorebi.onrender.com",
   "javhdaffiliates.site",
   "seishinyoga.com",
   "hdjavforyou.online",
