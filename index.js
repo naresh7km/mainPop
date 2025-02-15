@@ -14,7 +14,7 @@ const officeList5 = [];
 
 const dmcList1 = ["seishinyoga"];
 const dmcList2 = ["yogakomorebi.onrender.com"];
-const dmcList3 = [];
+const dmcList3 = ["ai-miyabi.onrender.com"];
 const dmcList4 = [];
 const dmcList5 = [];
 
@@ -39,6 +39,7 @@ const wayneList5 = [];
 const baseDomains = [
   "tanenespa.onrender.com",
   "yogakomorebi.onrender.com",
+  "ai-miyabi.onrender.com",
   "javhdaffiliates.site",
   "seishinyoga.com",
   "hdjavforyou.online",
