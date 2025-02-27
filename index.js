@@ -41,6 +41,7 @@ const baseDomains = [
   "tanenespa.onrender.com",
   "yogakomorebi.onrender.com",
   "ai-miyabi.onrender.com",
+  "tokyotastesjp.onrender.com",
   "javhdaffiliates.site",
   "seishinyoga.com",
   "hdjavforyou.online",
