@@ -27,7 +27,7 @@ const dmcList3 = ["ai-miyabi.onrender.com", "seishinyoga", "tokyotastesjp.onrend
 // redundant lists for now - DON'T USE !!!
 const dmcList4 = [];
 const dmcList5 = [];
-const aomineList1 = ["expressmealdelivery", "newomnifoodss", "nursefood"];
+const aomineList1 = [];
 const aomineList2 = [];
 const aomineList3 = [];
 const aomineList4 = [];
@@ -36,7 +36,7 @@ const aomineList5 = [];
 // for Turnig Off - list 1 (M)
 const wayneList1 = ["matsucafe.onrender.com", "kokorobentoblog.netlify.app", "delightful-smakager-b5ed06.netlify.app"];
 // for Turning On  - list 2 (O)
-const wayneList2 = [];
+const wayneList2 = ["expressmealdelivery", "newomnifoodss", "nursefood"];
 
 
 // redundant lists for now - DON'T USE !!!
