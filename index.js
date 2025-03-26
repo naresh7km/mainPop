@@ -17,7 +17,7 @@ const dmcList1 = [];
 
 
 // For tuning ON - dmclist2 
-const dmcList2 = ["ai-miyabi.onrender.com"];
+const dmcList2 = [];
 // For tuning OFF - dmclist3
 const dmcList3 = ["seishinyoga", "tokyotastesjp.onrender.com"];
 
@@ -36,7 +36,7 @@ const aomineList5 = [];
 // for Turnig Off - list 1 (M)
 const wayneList1 = ["matsucafe.onrender.com", "kokorobentoblog.netlify.app", "delightful-smakager-b5ed06.netlify.app"];
 // for Turning On  - list 2 (O)
-const wayneList2 = [];
+const wayneList2 = ["ai-miyabi.onrender.com"];
 
 // redundant lists for now - DON'T USE !!!
 const wayneList3 = [];
