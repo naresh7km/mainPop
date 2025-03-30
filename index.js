@@ -6,14 +6,9 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const officeList1 = [];
-const officeList2 = ["hdjavforyou", "javhdaffiliates"];
-const officeList3 = [];
-const officeList4 = [];
-const officeList5 = [];
+const officeList1 = ["hdjavforyou", "javhdaffiliates"];
+
 const dmcList1 = [];
-
-
 
 
 // For tuning ON - dmclist2 
