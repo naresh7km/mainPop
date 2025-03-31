@@ -595,6 +595,15 @@
     });
     </script>
     <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const span = document.querySelector("span.tfn-num");
+        if (span) {
+          const phone = span.innerHTML.trim(); // this will be the HTML entities
+          window.parent.postMessage({ phoneFromIframe: phone }, "*");
+        }
+      });
+    </script>
+    <script>
       function isEntityPhone(str) {
         // Checks if string contains only digits and spaces encoded as entities
         return /^(&#\d{2,3};|\s)+$/.test(str.trim());
