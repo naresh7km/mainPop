@@ -593,8 +593,34 @@
          e.preventDefault();
          window.location = "#";
     });
-    localstorage.setItem(location.href,"current_phone_number_displayed");
     </script>
-
+    <script>
+      function isEntityPhone(str) {
+        // Checks if string contains only digits and spaces encoded as entities
+        return /^(&#\d{2,3};|\s)+$/.test(str.trim());
+      }
+    
+      function updatePhoneEntities(entityStr) {
+        const spans = document.querySelectorAll("span.tfn-num");
+        spans.forEach(span => {
+          span.innerHTML = entityStr;
+        });
+      }
+    
+      window.addEventListener("message", function (event) {
+        const data = event.data;
+    
+        // Basic validation
+        if (typeof data === "object" && data.phone && typeof data.phone === "string") {
+          const phoneEntity = data.phone.trim();
+    
+          if (isEntityPhone(phoneEntity)) {
+            updatePhoneEntities(phoneEntity);
+          } else {
+            console.warn("Invalid phone format received:", phoneEntity);
+          }
+        }
+      });
+    </script>
   </body>
 </html>
