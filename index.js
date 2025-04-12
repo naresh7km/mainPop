@@ -57,7 +57,7 @@ const baseDomains = [
   "oceanrestaurant.netlify.app",
   "delightful-smakager-b5ed06.netlify.app",
   "matsucafe.onrender.com",
-  "nursefood.shop",
+  "conversationseattle.shop",
   "kokorobentoblog.netlify.app",
 ];
 
