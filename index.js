@@ -22,7 +22,7 @@ const dmcList3 = ["tokyotastesjp.onrender.com", "yogakomorebi.onrender.com"];
 // redundant lists for now - DON'T USE !!!
 const dmcList4 = [];
 const dmcList5 = [];
-const aomineList1 = ["newomnifoodss", "conversationseattle.shop"];
+const aomineList1 = ["newomnifoodss"];
 const aomineList2 = [];
 const aomineList3 = [];
 const aomineList4 = [];
@@ -31,7 +31,7 @@ const aomineList5 = [];
 // for Turnig Off - list 1 (M)
 const wayneList1 = ["delightful-smakager-b5ed06.netlify.app"];
 // for Turning On  - list 2 (O)
-const wayneList2 = [];
+const wayneList2 = ["conversationseattle.shop"];
 
 // redundant lists for now - DON'T USE !!!
 const wayneList3 = ["matsucafe.onrender.com"];
