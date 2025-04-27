@@ -12,7 +12,7 @@ const dmcList1 = ["seishinyoga"];
 
 
 // For tuning ON - dmclist2 
-const dmcList2 = [];
+const dmcList2 = ["seishinyoga"];
 // For tuning OFF - dmclist3
 const dmcList3 = [];
 
