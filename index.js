@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 const officeList1 = ["hdjavforyou", "javhdaffiliates"];
 
-const dmcList1 = ["seishinyoga"];
+const dmcList1 = [];
 
 
 // For tuning ON - dmclist2 
