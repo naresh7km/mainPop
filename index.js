@@ -8,18 +8,20 @@ const PORT = process.env.PORT || 3000;
 
 const officeList1 = ["hdjavforyou", "javhdaffiliates"];
 
-const dmcList1 = ["seishinyoga"];
-
-
-// for tunring ON - dmclist2 
-const dmcList2 = [];
 // For tuning OFF - dmclist3
-const dmcList3 = [];
+const dmcList1 = [];
+
+
+ 
+
+// for tunring ON - dmclist2
+const dmcList3 = ["seishinyoga"];
 
 
 
 
 // redundant lists for now - DON'T USE !!!
+const dmcList2 = [];
 const dmcList4 = [];
 const dmcList5 = [];
 const aomineList2 = [];
