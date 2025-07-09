@@ -21,7 +21,7 @@ const dmcList3 = ["seishinyoga"];
 
 
 // redundant lists for now - DON'T USE !!!
-const dmcList2 = ["kansaigourmet.shop"];
+const dmcList2 = ["kansaigourmet"];
 const dmcList4 = [];
 const dmcList5 = [];
 const aomineList2 = [];
