@@ -16,7 +16,7 @@ const dmcList1 = ["seishinyoga"];
 const dmcList3 = [];
 
 
-const dmcList2 = ["kansaigourmet"];
+const dmcList2 = ["kansaigourmet", "sunblue.yoga"];
 const dmcList4 = [];
 const dmcList5 = [];
 const aomineList2 = [];
@@ -39,6 +39,7 @@ const wayneList5 = [];
 const baseDomains = [
   "kansaigourmet.shop",
   "seishinyoga.com",
+  "sunblue.yoga",
  "kevinsfoodhut.store",
 ];
 
