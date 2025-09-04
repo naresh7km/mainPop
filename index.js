@@ -34,7 +34,7 @@ const aomineList4 = [];
 const aomineList5 = [];
 
 // for Turnig Off - list 1 (M)
-const aomineList1 = ["newomnifoodss"];
+const aomineList1 = ["kochifoodie.shop"];
 // for Turning On  - list 2 (O)
 const wayneList2 = ["conversationseattle.shop"];
 
