@@ -16,7 +16,7 @@ const dmcList1 = ["seishinyoga"];
 const dmcList3 = [];
 
 
-// Empty
+// LUPIN
 const dmcList2 = [];
 
 
