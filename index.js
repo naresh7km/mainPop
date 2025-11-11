@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const officeList1 = [];
+
 
 // For Turning OFF
 const dmcList1 = ["seishinyoga"];
@@ -28,7 +28,7 @@ const dmcList3 = [];
 
 
 // redundant lists for now - DON'T USE !!!
-
+const officeList1 = [];
 const dmcList4 = [];
 const dmcList5 = [];
 const aomineList2 = [];
